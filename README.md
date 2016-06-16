@@ -1,5 +1,4 @@
 # BuildR - Path
-### Highly experimental PHP framework
 
 ## ToDo
 
@@ -14,7 +13,7 @@ For contribution please refer our [Contribution Guide](https://github.com/Buildr
 
 ## License
 
-BuildR and its components are licensed under GPL v3 ([Read](https://raw.githubusercontent.com/BuildrPHP/Collection/master/LICENSE.md))
+BuildR and its components are licensed under GPL v3 ([Read](https://raw.githubusercontent.com/BuildrPHP/Path/master/LICENSE.md))
 [![License image](http://gplv3.fsf.org/gplv3-88x31.png)]()
 
 ## Thanks
