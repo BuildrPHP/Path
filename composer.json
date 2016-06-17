@@ -1,27 +1,26 @@
 {
   "name": "buildr/path",
   "type": "library",
-  "homepage": "http://buildr-framework.io",
+  "homepage": "https://buildr-framework.io",
   "authors": [
     {
       "name": "Zoltán Borsos",
       "email": "zolli07@gmail.com",
-      "homepage": "http://zolli.hu",
+      "homepage": "https://zolli.hu",
       "role": "Developer"
     }
   ],
   "support": {
-    "issues": "http://project.zolli.hu",
-    "source": "http://project.zolli.hu/diffusion/PATH/",
-    "docs": "http://docs.buildr-framework.io/path"
+    "issues": "https://project.zolli.hu/projects/BC/summary",
+    "source": "https://code.zolli.hu/projects/BC/repos/path",
+    "docs": "https://docs.zolli.hu/display/BCPT"
   },
-  "description": "BuildR Framework PATH Component",
+  "description": "BuildR Framework Path Component",
   "keywords": [
     "helper",
     "path",
     "directory",
     "file_location",
-    "filesystem",
     "component",
     "framework"
   ],

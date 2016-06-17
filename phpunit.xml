@@ -1,14 +1,18 @@
 <phpunit
-        bootstrap="./bootstrap.php"
-        backupGlobals="false"
-        backupStaticAttributes="false"
-        convertNoticesToExceptions="false"
-        convertErrorsToExceptions="true"
-        convertWarningsToExceptions="true"
-        verbose="true">
+    bootstrap="./bootstrap.php"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    convertNoticesToExceptions="false"
+    convertErrorsToExceptions="true"
+    convertWarningsToExceptions="true"
+    verbose="true">
     <testsuites>
-        <testsuite name="BuildR - Path">
-            <directory suffix="Test.php">./tests</directory>
+        <testsuite name="Path - Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+
+        <testsuite name="Path Integration">
+            <directory suffix="Test.php">./tests/Integration</directory>
         </testsuite>
     </testsuites>
 
