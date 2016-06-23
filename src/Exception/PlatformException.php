@@ -14,9 +14,11 @@ use BuildR\Foundation\Exception\Exception;
  * @copyright    Copyright 2016, Zoltán Borsos.
  * @license      https://github.com/BuildrPHP/Path/blob/master/LICENSE.md
  * @link         https://github.com/BuildrPHP/Path
+ *
+ * @codeCoverageIgnore
  */
 class PlatformException extends Exception {
-    
+
     public static function unsupported($platformType) {
         return self::createByFormat('The (%s) platform is not supported!', [$platformType]);
     }
