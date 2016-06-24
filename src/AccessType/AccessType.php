@@ -1,4 +1,4 @@
-<?php namespace BuildR\path\AccessType;
+<?php namespace BuildR\Path\AccessType;
 
 use BuildR\Utils\Enumeration\EnumerationBase;
 

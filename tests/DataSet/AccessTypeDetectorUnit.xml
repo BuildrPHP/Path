@@ -1,0 +1,60 @@
+<testGroups>
+    <testGroup name="testWindowsAccessType">
+        <dataSet>
+            <dataSetProperty name="input" value="c:/" />
+            <dataSetProperty name="expected" value="ABSOLUTE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="c:////" />
+            <dataSetProperty name="expected" value="ABSOLUTE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="C:/" />
+            <dataSetProperty name="expected" value="ABSOLUTE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="c:" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="./" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="php:/" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+    </testGroup>
+
+    <testGroup name="testUnixAccessType">
+        <dataSet>
+            <dataSetProperty name="input" value="/" />
+            <dataSetProperty name="expected" value="ABSOLUTE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="//" />
+            <dataSetProperty name="expected" value="ABSOLUTE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="~/pictures" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="../" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+
+        <dataSet>
+            <dataSetProperty name="input" value="./" />
+            <dataSetProperty name="expected" value="RELATIVE" />
+        </dataSet>
+    </testGroup>
+</testGroups>

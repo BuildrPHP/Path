@@ -1,4 +1,4 @@
-<?php namespace BuildR\AccessType\AccessType;
+<?php namespace BuildR\Path\AccessType;
 
 use BuildR\Path\AccessType\AccessTypeDetectorInterface;
 
@@ -15,7 +15,7 @@ use BuildR\Path\AccessType\AccessTypeDetectorInterface;
  * @license      https://github.com/BuildrPHP/Path/blob/master/LICENSE.md
  * @link         https://github.com/BuildrPHP/Path
  */
-abstract class AbstractAccessTypeDetector implements AccessTypeDetectorInterface{
+abstract class AbstractAccessTypeDetector implements AccessTypeDetectorInterface {
 
     /**
      * @type string

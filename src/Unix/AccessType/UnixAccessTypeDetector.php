@@ -1,24 +1,24 @@
-<?php namespace BuildR\Path\Windows\AccessType;
+<?php namespace BuildR\Path\Unix\AccessType;
 
 use BuildR\Path\AccessType\AbstractAccessTypeDetector;
-use BuildR\Path\AccessType\AccessType;
+use BuildR\path\AccessType\AccessType;
 
 /**
- * Windows specific accessTypeDetector implementation
+ * Unix specific accessTypeDetector implementation
  *
  * BuildR PHP Framework
  *
  * @author Zoltán Borsos <zolli07@gmail.com>
  * @package Path
- * @subpackage Windows\AccessType
+ * @subpackage Unix\AccessType
  *
  * @copyright    Copyright 2016, Zoltán Borsos.
  * @license      https://github.com/BuildrPHP/Path/blob/master/LICENSE.md
  * @link         https://github.com/BuildrPHP/Path
  */
-class WindowsAccessTypeDetector extends AbstractAccessTypeDetector {
+class UnixAccessTypeDetector extends AbstractAccessTypeDetector {
 
-    const ABSOLUTE_REGEX = '/^([a-zA-Z]\:[\\\\\/])/';
+    const ABSOLUTE_REGEX = '/^([\\\\\/])/';
 
     /**
      * {@inheritDoc}

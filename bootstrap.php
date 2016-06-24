@@ -7,4 +7,6 @@ if(!file_exists($autoloadFile)) {
     exit(1);
 }
 
+define('BUILDR_TEST_PROJECT_ROOT', __DIR__);
+
 include_once $autoloadFile;
