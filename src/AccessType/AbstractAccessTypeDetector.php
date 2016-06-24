@@ -33,9 +33,10 @@ abstract class AbstractAccessTypeDetector implements AccessTypeDetectorInterface
      * {@inheritDoc}
      */
     public function setPath($path) {
-        $this->path = $path;
+        $clone = clone $this;
+        $clone->path = $path;
 
-        return $this;
+        return $clone;
     }
 
     /**

@@ -35,4 +35,16 @@ class AccessTypeTest extends BuildR_TestCase {
         $this->assertEquals($expected, $unixDetector->getType()->getValue());
     }
 
+    public function testGettersAndSettersWorksCorrectly() {
+        $winDetector = new WindowsAccessTypeDetector('c:/');
+
+        $this->assertEquals('c:/', $winDetector->getPath());
+        $returned = $winDetector->setPath('z:/Documents');
+
+        $this->assertInstanceOf(WindowsAccessTypeDetector::class, $returned);
+        $this->assertNotEquals($winDetector, $returned);
+        $this->assertEquals('c:/', $winDetector->getPath());
+        $this->assertEquals('z:/Documents', $returned->getPath());
+    }
+
 }
